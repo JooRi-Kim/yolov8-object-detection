@@ -31,15 +31,23 @@ Flask를 기반으로 동작하며, AI가 실시간으로 객체를 탐지하고
 ---
 
 ## 📂 프로젝트 구조
-- flask_server/
-- │── static/             # 정적 파일 (CSS, JS, 이미지)
-- │── templates/          # HTML 파일들
-- │── yolov5/             # YOLOv8 모델 관련 파일
-- │── venv/               # 가상 환경 (Git에 포함되지 않음)
-- │── app.py              # Flask 웹 서버
-- │── best.pt             # 학습된 YOLOv8 모델 가중치
-- │── requirements.txt    # 필요한 패키지 목록
-- │── README.md           # 프로젝트 설명
+flask_server/
+
+│── static/             # 정적 파일 (CSS, JS, 이미지)
+
+│── templates/          # HTML 파일들
+
+│── yolov5/             # YOLOv8 모델 관련 파일
+
+│── venv/               # 가상 환경 (Git에 포함되지 않음)
+
+│── app.py              # Flask 웹 서버
+
+│── best.pt             # 학습된 YOLOv8 모델 가중치
+
+│── requirements.txt    # 필요한 패키지 목록
+
+│── README.md           # 프로젝트 설명
 
 ---
 
