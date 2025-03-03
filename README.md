@@ -1,6 +1,17 @@
-## 📌 YOLOv8을 활용한 객체 탐지
+## 📌 프로젝트 소개
 이 프로젝트는 **YOLOv8 모델을 사용하여 객체 탐지**를 수행하는 웹 애플리케이션입니다.  
 Flask를 기반으로 동작하며, AI가 실시간으로 객체를 탐지하고 결과를 표시합니다.
+
+🎯 주요 기능
+✔ YOLOv8 모델을 활용한 실시간 객체 탐지
+✔ 웹을 통해 탐지된 객체 이미지 및 결과 표시
+✔ (추가 기능이 있다면 여기에 기재)
+
+🛠️ 기술 스택
+- **Backend:** Flask (Python)
+- **AI Model:** YOLOv8 (Ultralytics)
+- **Frontend:** HTML, CSS, JavaScript
+- **Database:** MySQL
 
 👉 **관련 블로그 글**
 - 📖 [YOLOv8 학습 및 모델 적용 과정](https://djjin02.tistory.com/205)
@@ -19,11 +30,16 @@ Flask를 기반으로 동작하며, AI가 실시간으로 객체를 탐지하고
 
 ---
 
-## 🛠️ 기술 스택
-- **Backend:** Flask (Python)
-- **AI Model:** YOLOv8 (Ultralytics)
-- **Frontend:** HTML, CSS, JavaScript
-- **Database:** MySQL
+## 📂 프로젝트 구조
+flask_server/
+│── static/             # 정적 파일 (CSS, JS, 이미지)
+│── templates/          # HTML 파일들
+│── yolov5/             # YOLOv8 모델 관련 파일
+│── venv/               # 가상 환경 (Git에 포함되지 않음)
+│── app.py              # Flask 웹 서버
+│── best.pt             # 학습된 YOLOv8 모델 가중치
+│── requirements.txt    # 필요한 패키지 목록
+│── README.md           # 프로젝트 설명
 
 ---
 
@@ -32,3 +48,5 @@ Flask를 기반으로 동작하며, AI가 실시간으로 객체를 탐지하고
 ```bash
 python -m venv venv
 venv\Scripts\activate  # Windows
+
+
