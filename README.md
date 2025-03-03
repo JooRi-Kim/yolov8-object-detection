@@ -32,7 +32,7 @@
 ---
 
 ## 📂 프로젝트 구조
-'''
+```
 📦 flask_server/
 ├── 📂 static/             # 정적 파일 (CSS, JS, 이미지)
 ├── 📂 templates/          # HTML 파일
@@ -42,6 +42,7 @@
 ├── 🏋️‍♂️ best.pt             # 학습된 YOLOv8 모델 가중치 (Git에 포함되지 않음)
 ├── 📜 requirements.txt    # 필요한 패키지 목록
 └── 📖 README.md           # 프로젝트 설명
+```
 
 ---
 
