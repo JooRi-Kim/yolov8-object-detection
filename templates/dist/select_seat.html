@@ -1,0 +1,64 @@
+<!-- 좌석 선택 페이지 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>좌석 선택</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .seat {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            display: inline-block;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+        .occupied {
+            background-color: red;
+            cursor: not-allowed;
+        }
+        .selected {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>좌석 선택</h1>
+        <form method="POST">
+            <input type="hidden" id="selectedSeatInput" name="seat_number">
+            <button type="submit">좌석 예약</button>
+        </form>
+        <h2>좌석 번호</h2>
+        <div id="seatsContainer">
+            {% for seat in seats %}
+                <div id="seat-{{ seat[1] }}" 
+                     class="seat {% if seat[2] %}occupied{% endif %}" 
+                     onclick="selectSeat({{ seat[1] }})">
+                    {{ seat[1] }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <script>
+        function selectSeat(seatNumber) {
+            const seatElement = document.getElementById('seat-' + seatNumber);
+            if (seatElement.classList.contains('occupied')) {
+                alert('이미 사용 중인 좌석입니다.');
+                return;
+            }
+
+            // 좌석 선택 해제/선택
+            const selectedSeats = document.querySelectorAll('.selected');
+            selectedSeats.forEach(seat => seat.classList.remove('selected'));
+            seatElement.classList.add('selected');
+
+            // 숨겨진 입력 필드 값 업데이트
+            document.getElementById('selectedSeatInput').value = seatNumber;
+        }
+    </script>
+</body>
+</html>

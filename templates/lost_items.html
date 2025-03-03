@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>분실물 확인</title>
+</head>
+<body>
+    <h1>분실물 목록</h1>
+    {% if items %}
+        <ul>
+            {% for item in items %}
+                <li>좌석 {{ item[0] }} - 분실물: {{ item[1] }} (등록 시간: {{ item[2] }})</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>현재 등록된 분실물이 없습니다.</p>
+    {% endif %}
+</body>
+</html>
