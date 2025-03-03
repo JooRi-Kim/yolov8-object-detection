@@ -21,11 +21,11 @@
 ---
 
 
-## 🛠️ 기술 스택
-- **AI Model**: YOLOv8 (Ultralytics)
-- **Backend**: Flask (Python)
-- **Frontend**: HTML, CSS, JavaScript
-- **Database**: MySQL
+## 🛠️ 사용 기술
+- AI: YOLOv8 (Ultralytics)
+- Backend: Flask (Python)
+- Frontend: HTML, CSS, JavaScript
+- Database: MySQL
 
 
 ---
