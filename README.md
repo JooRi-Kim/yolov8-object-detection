@@ -15,7 +15,10 @@
 
 
 ## 👨‍💻 개발 담당
-- Backend: Flask 서버 개발(app.py), DB 구현, 웹과 YOLOv8 모델 연동
+- Backend
+  - Flask 서버(app.py) 개발
+  - DB 구현
+  - 웹과 YOLOv8 모델 연동
 
 
 ---
