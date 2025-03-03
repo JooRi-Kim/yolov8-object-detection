@@ -23,7 +23,7 @@ Flask를 기반으로 동작하며, AI가 실시간으로 객체를 탐지하고
 > YOLOv8을 활용한 객체 탐지 결과 예시  
 
 ### 📌 **객체 탐지 화면**
-![객체 탐지 결과](https://github.com/JooRi-Kim/yolov8-object-detection/issues/1#issue-2890455443)
+![객체 탐지 결과](https://private-user-images.githubusercontent.com/122363990/418480687-856e0587-4328-4020-9016-53a99ce95171.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA5OTAyMDgsIm5iZiI6MTc0MDk4OTkwOCwicGF0aCI6Ii8xMjIzNjM5OTAvNDE4NDgwNjg3LTg1NmUwNTg3LTQzMjgtNDAyMC05MDE2LTUzYTk5Y2U5NTE3MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwM1QwODE4MjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02YjU1Yjc1YzQ2YTJiOWY0MjFlNDU2MTZmMTJmY2FlYjRlOTY3OWYxZTg0OWUxZTg2YTE5ZmQzYWRkY2JiMWQzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.E0SsE8PU9fel7oUC6cm4jW0of5fEtmlYPuQS-Wnn1o4)
 
 ### 📌 **웹 애플리케이션 UI**
 ![웹 UI](https://your-image-url.com/web-ui-example.png)
