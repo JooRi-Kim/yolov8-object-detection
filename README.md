@@ -23,7 +23,7 @@ Flask를 기반으로 동작하며, AI가 실시간으로 객체를 탐지하고
 > YOLOv8을 활용한 객체 탐지 결과 예시  
 
 ### 📌 **객체 탐지 화면**
-![객체 탐지 결과](https://your-image-url.com/yolo-detection-example.png)
+![객체 탐지 결과](https://github.com/JooRi-Kim/yolov8-object-detection/issues/1#issue-2890455443)
 
 ### 📌 **웹 애플리케이션 UI**
 ![웹 UI](https://your-image-url.com/web-ui-example.png)
