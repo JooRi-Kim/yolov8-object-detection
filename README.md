@@ -2,14 +2,14 @@
 이 프로젝트는 **YOLOv8 모델을 사용하여 객체 탐지**를 수행하는 웹 애플리케이션입니다.  
 Flask를 기반으로 동작하며, AI가 실시간으로 객체를 탐지하고 결과를 표시합니다.
 
-🎯 주요 기능
+## 🎯 주요 기능
 - 로그인/로그아웃, 좌석 선택/퇴실
 - 퇴실 시 YOLOv8 모델을 활용한 실시간 객체 탐지
 - 웹을 통해 탐지된 객체 이미지 및 결과 표시
 
-🛠️ 기술 스택
-- **Backend:** Flask (Python)
+## 🛠️ 기술 스택
 - **AI Model:** YOLOv8 (Ultralytics)
+- **Backend:** Flask (Python)
 - **Frontend:** HTML, CSS, JavaScript
 - **Database:** MySQL
 
