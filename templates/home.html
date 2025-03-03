@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>홈</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        {% if 'user_id' in session %}
+            <h1>안녕하세요, {{ session['username'] }}</h1>
+            {% if is_occupied %}
+                <form method="POST" action="{{ url_for('exit_seat') }}">
+                    <button type="submit">퇴실하기</button>
+                </form>
+            {% else %}
+                <p>현재 사용중인 좌석이 없습니다. 좌석을 선택해 주세요.</p>
+                <a href="{{ url_for('select_seat') }}">좌석 선택</a>
+            {% endif %}
+            <a href="{{ url_for('logout') }}">로그아웃</a>
+        {% else %}
+            <h1>스터디 카페에 오신 것을 환영합니다</h1>
+            <p>시스템에 접속하려면 <a href="{{ url_for('login') }}">로그인</a> 해주세요.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

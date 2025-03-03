@@ -1,0 +1,8 @@
+.vscode/
+venv/
+yolov5/
+*.pt
+.vscode/
+venv/
+yolov5/
+*.pt

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>퇴실 완료</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- <h1>퇴실이 완료되었습니다.</h1> -->
+        {% if lost_item %}
+            <h1>분실물: {{ lost_item }}</h1>
+        {% else %}
+            <h1>분실물이 없습니다.</h1>
+        {% endif %}
+        
+        <!-- 캡처된 이미지 표시 -->
+        {% if captured_image %}
+            <p>분실물 사진</p>
+            <img src="{{ url_for('static', filename='captured_image.jpg') }}" alt="Captured Image" style="max-width: 100%; height: auto;">
+        {% endif %}
+        
+        <button onclick="window.location.href='/'">확인</button>
+    </div>
+</body>
+</html>

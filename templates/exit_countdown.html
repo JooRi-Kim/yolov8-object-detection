@@ -1,0 +1,49 @@
+<!-- 퇴실하기 버튼 클릭 시 10초동안 분실물 탐지하는 카운트다운 페이지 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>퇴실 중...</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>분실물을 확인하는 중입니다.</h1>
+        <p id="countdown">남은 시간: 2초</p>
+    </div>
+    <script>
+        let countdown = 2;
+        const countdownElement = document.getElementById('countdown');
+
+        function updateCountdown() {
+            if (countdown > 0) {
+                countdown--;
+                countdownElement.textContent = `남은 시간: ${countdown}초`;
+            } else {
+                clearInterval(timer);
+            }
+        }
+
+        const timer = setInterval(updateCountdown, 1000);
+
+        // AJAX 요청으로 객체 탐지를 시작
+        fetch('/start-detection', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: `seat_number={{ seat_number }}`
+        })
+        .then(response => response.text())
+        .then(data => {
+            // 결과 페이지로 이동
+            document.open();
+            document.write(data);
+            document.close();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    </script>
+</body>
+</html>
